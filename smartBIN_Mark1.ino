@@ -20,7 +20,7 @@ void loop() {
   Serial.println("Current Wastelevel :");
   Serial.println(-(WasteLevel.measureDistanceCm()-bin_depth));
 
-  if(OpenBIN.measureDistanceCm() <= 10)
+  if(OpenBIN.measureDistanceCm() <= 30)
   {
     myservo.write(180);
     delay(4000);
